@@ -4,7 +4,6 @@
 <head>
 	<title>Progressive Form | Multi Steps Form</title>
 	<link rel="stylesheet" type="text/css" href="form.css">
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
@@ -94,71 +93,227 @@
 					</div>
 				</form>
 			</div>
-			<div class="form_2 data_info" style="display: none;">
-				<h2>Personal Info</h2>
+			<div class="form_2 data_info common-form" style="display: none;">
+				<span>Your Details</span>
 				<form>
-					<div class="form_container">
-						<div class="input_wrap">
-							<label for="user_name">User Name</label>
-							<input type="text" name="User Name" class="input" id="user_name">
+					<div class="donor-type">
+						<div class="donor-type-btn">
+							<input type="radio" id="individual" name="type" value="individual">
+							<label for="individual">Individual</label>
 						</div>
-						<div class="input_wrap">
-							<label for="first_name">First Name</label>
-							<input type="text" name="First Name" class="input" id="first_name">
-						</div>
-						<div class="input_wrap">
-							<label for="last_name">Last Name</label>
-							<input type="text" name="Last Name" class="input" id="last_name">
+						<div class="donor-type-btn">
+							<input type="radio" id="organization" name="type" value="organization">
+							<label for="organization">Business/Organization</label>
 						</div>
 					</div>
+			
+					<div class="form-group">
+						<div class="group">
+							<label for="first-name">First Name</label>
+							<input type="text" id="first-name" name="first-name" required>
+						</div>
+						<div class="group">
+							<label for="last-name">Last Name</label>
+							<input type="text" id="last-name" name="last-name" required>
+						</div>
+						<div class="group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+					</div>
+
+					<div class="group">
+						<label for="phone">Phone Number</label>
+						<div class="form-group">
+							<input type="tel" id="phone" name="phone">
+							<div class="btn-group phone-types" id="group3">
+								<div>
+									<input type="radio"  id="radio11" class="radio" checked name="group3" />
+									<label for="radio11">Work</label>
+								</div>
+								<div>
+									<input type="radio"  id="radio12" class="radio" name="group3"/>
+									<label for="radio12">Mobile</label>
+								</div>
+								<div>
+									<input type="radio"  id="radio13" class="radio" name="group3"/>
+									<label for="radio13">Home</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="group">
+							<label for="address1">Address Line 1</label>
+							<input type="text" id="address1" name="address1">
+						</div>
+						<div class="group">
+							<label for="address2">Address Line 2</label>
+							<input type="text" id="address2" name="address2">
+						</div>
+						<div class="group">
+							<label for="city">City</label>
+							<input type="text" id="city" name="city">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="group">
+							<label for="state">State/Province</label>
+							<select id="state" name="state">
+								<option value="">Please select</option>
+								<option value="CA">California</option>
+								<option value="NY">New York</option>
+								<option value="TX">Texas</option>
+							</select>
+						</div>
+						<div class="group">
+							<label for="postal">Postal Code</label>
+							<input type="text" id="postal" name="postal">
+						</div>
+						<div class="group">
+							<label for="country">Country</label>
+							<select id="state" name="state">
+								<option value="">Please select</option>
+								<option value="CA">California</option>
+								<option value="NY">New York</option>
+								<option value="TX">Texas</option>
+							</select>
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<input type="checkbox" id="terms" name="terms">
+						<label for="terms">Make this activity anonymous</label>
+					</div>
+			
+					<div class="form-group">
+						<div class="group">
+							<label for="msg">Message of Support (Will be displayed on public site)</label>
+							<textarea name="" id="" cols="30" rows="5"></textarea>
+						</div>
+					</div>			
 				</form>
 			</div>
-			<div class="form_3 data_info" style="display: none;">
-				<h2>Professional Info</h2>
+			<div class="form_3 data_info common-form" style="display: none;">
+				<span>Your Details</span>
 				<form>
-					<div class="form_container">
-						<div class="input_wrap">
-							<label for="company">Current Company</label>
-							<input type="text" name="Current Company" class="input" id="company">
+					<div class="donor-type">
+						<div class="donor-type-btn" id="type_">
+							<input type="radio" id="individual_" name="type_" value="individual">
+							<label for="individual_">Individual</label>
 						</div>
-						<div class="input_wrap">
-							<label for="experience">Total Experience</label>
-							<input type="text" name="Total Experience" class="input" id="experience">
-						</div>
-						<div class="input_wrap">
-							<label for="designation">Designation</label>
-							<input type="text" name="Designation" class="input" id="designation">
+						<div class="donor-type-btn">
+							<input type="radio" id="organization_" name="type_" value="organization">
+							<label for="organization_">Business/Organization</label>
 						</div>
 					</div>
+			
+					<div class="form-group">
+						<div class="group">
+							<label for="first-name">First Name</label>
+							<input type="text" id="first-name" name="first-name" required>
+						</div>
+						<div class="group">
+							<label for="last-name">Last Name</label>
+							<input type="text" id="last-name" name="last-name" required>
+						</div>
+						<div class="group">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+					</div>
+
+					<div class="group">
+						<label for="phone">Phone Number</label>
+						<div class="form-group">
+							<input type="tel" id="phone" name="phone">
+							<div class="btn-group phone-types" id="group3">
+								<div>
+									<input type="radio"  id="radio14" class="radio" checked name="group4" />
+									<label for="radio14">Work</label>
+								</div>
+								<div>
+									<input type="radio"  id="radio15" class="radio" name="group4"/>
+									<label for="radio15">Mobile</label>
+								</div>
+								<div>
+									<input type="radio"  id="radio16" class="radio" name="group4"/>
+									<label for="radio16">Home</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="group">
+							<label for="address1">Address Line 1</label>
+							<input type="text" id="address1" name="address1">
+						</div>
+						<div class="group">
+							<label for="address2">Address Line 2</label>
+							<input type="text" id="address2" name="address2">
+						</div>
+						<div class="group">
+							<label for="city">City</label>
+							<input type="text" id="city" name="city">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="group">
+							<label for="state">State/Province</label>
+							<select id="state" name="state">
+								<option value="">Please select</option>
+								<option value="CA">California</option>
+								<option value="NY">New York</option>
+								<option value="TX">Texas</option>
+							</select>
+						</div>
+						<div class="group">
+							<label for="postal">Postal Code</label>
+							<input type="text" id="postal" name="postal">
+						</div>
+						<div class="group">
+							<label for="country">Country</label>
+							<select id="state" name="state">
+								<option value="">Please select</option>
+								<option value="CA">California</option>
+								<option value="NY">New York</option>
+								<option value="TX">Texas</option>
+							</select>
+						</div>
+					</div>
+			
+					<div class="form-group">
+						<input type="checkbox" id="terms" name="terms">
+						<label for="terms">Make this activity anonymous</label>
+					</div>
+			
+					<div class="form-group">
+						<div class="group">
+							<label for="msg">Message of Support (Will be displayed on public site)</label>
+							<textarea name="" id="" cols="30" rows="5"></textarea>
+						</div>
+					</div>			
 				</form>
 			</div>
 		</div>
 		<div class="btns_wrap">
 			<div class="common_btns form_1_btns">
-				<button type="button" class="btn_next">Donate Now</button>
+				<button type="button" class="btn_next btn">Donate Now</button>
 			</div>
 			<div class="common_btns form_2_btns" style="display: none;">
-				<button type="button" class="btn_back"><span class="icon"><ion-icon
-							name="arrow-back-sharp"></ion-icon></span>Back</button>
-				<button type="button" class="btn_next">Next <span class="icon"><ion-icon
-							name="arrow-forward-sharp"></ion-icon></span></button>
+				<button type="button" class="btn_back btn">Back</button>
+				<button type="button" class="btn_next btn">Continue</button>
 			</div>
 			<div class="common_btns form_3_btns" style="display: none;">
-				<button type="button" class="btn_back"><span class="icon"><ion-icon
-							name="arrow-back-sharp"></ion-icon></span>Back</button>
-				<button type="button" class="btn_done">Done</button>
+				<button type="button" class="btn_back btn">Back</button>
+				<button type="button" class="btn_done btn">Done</button>
 			</div>
 		</div>
 	</div>
-
-	<div class="modal_wrapper">
-		<div class="shadow"></div>
-		<div class="success_wrap">
-			<span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
-			<p>You have successfully completed the process.</p>
-		</div>
-	</div>
-
 	<script type="text/javascript" src="form.js"></script> 
 
 </body>

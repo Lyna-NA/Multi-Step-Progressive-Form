@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="test.css">
 </head>
+
 <body>
     <form>
         <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+            <input type="radio" id="individual" name="type" value="individual">
+            <label for="individual">Individual</label>
+            <input type="radio" id="organization" name="type" value="organization">
+            <label for="organization">Business/Organization</label>
         </div>
-      
+
         <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
+            <div class="group-row">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="group-row">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="group-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
         </div>
-      
+
         <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone">
+            <div class="group-row">
+                <label for="address1">Address Line 1</label>
+                <input type="text" id="address1" name="address1">
+            </div>
+            <div class="group-row">
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address2">
+            </div>
+            <div class="group-row">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
         </div>
-      
+        
         <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
+            <div class="group-row">
+                <label for="state">State/Province</label>
+                <select id="state" name="state">
+                    <option value="">Please select</option>
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
+            <div class="group-row">
+                <label for="postal">Postal Code</label>
+                <input type="text" id="postal" name="postal">
+            </div>
+            <div class="group-row">
+                <label for="country">Country</label>
+                <select id="state" name="state">
+                    <option value="">Please select</option>
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
         </div>
-      
+
         <div class="form-group">
-          <label for="country">Country:</label>
-          <select id="country" name="country">
-            <option value="">Please select</option>
-            <option value="USA">USA</option>
-            <option value="Canada">Canada</option>
-            <option value="Mexico">Mexico</option>
-          </select>
+            <label for="terms">Terms and Conditions:</label>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept the terms and conditions.</label>
         </div>
-      
-        <div class="form-group">
-          <label for="gender">Gender:</label>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Other</label>
-        </div>
-      
-        <div class="form-group">
-          <label for="terms">Terms and Conditions:</label>
-          <input type="checkbox" id="terms" name="terms">
-          <label for="terms">I accept the terms and conditions.</label>
-        </div>
-      
+
         <input type="submit" value="Submit">
-      </form>
-      
+    </form>
+
 </body>
+
 </html>
